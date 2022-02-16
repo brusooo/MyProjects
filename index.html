@@ -13,6 +13,11 @@
     />
   </head>
   <body>
+    <div class="loader">
+      <span style="--i: 1.5"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 2.5"></span>
+    </div>
     <div class="title">
       <h1>My Projects</h1>
     </div>
@@ -50,10 +55,11 @@
             <i class="uil uil-keyboard-hide"></i>
           </div>
           <p>
-            " Lets rock the World " is a drumpad I have designed using React JS and
-            styled using Sass. It is a simple drumpad which can play different sound when different
-            buttons get clicked . Play some sounds lively using the link below.
-            Compose a tune on your own . Don't forget to view my other Projects.
+            " Lets rock the World " is a drumpad I have designed using React JS
+            and styled using Sass. It is a simple drumpad which can play
+            different sound when different buttons get clicked . Play some
+            sounds lively using the link below. Compose a tune on your own .
+            Don't forget to view my other Projects.
           </p>
           <a href="https://letsrocktheworld.netlify.app" target="_blank"
             ><span class="gradient">View Live</span></a
@@ -61,5 +67,17 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script>
+      $(window).on("load", function () {
+        setTimeout(hideLoader, 2000); 
+      });
+      function hideLoader() {
+        $(".loader").fadeOut(600, function (){
+          $(".loader").css("display","none");
+        });
+      }
+    </script>
   </body>
 </html>
