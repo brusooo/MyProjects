@@ -44,7 +44,7 @@ body {
   width: 23px;
   height: 23px;
   border-radius: 50%;
-  background: #fff;
+  background: #f80759;
   margin: 10px;
   -webkit-animation: load 1s ease forwards infinite;
           animation: load 1s ease forwards infinite;
@@ -215,7 +215,7 @@ body {
 
 .container .content .details p {
   position: relative;
-  top: -38px;
+  top: -40px;
   font-size: 1.1rem;
   padding: 10px 0;
   font-weight: 600;
@@ -225,7 +225,7 @@ body {
 
 .container .content .details a {
   position: relative;
-  top: -37px;
+  top: -42px;
   left: -30%;
   text-decoration: none;
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
