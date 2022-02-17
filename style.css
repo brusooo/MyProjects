@@ -114,14 +114,13 @@ body {
 .container .content {
   width: 250px;
   height: 420px;
-  margin: 20px;
+  margin: 40px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 25px;
   -webkit-box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 3px rgba(0, 0, 0, 0.6);
           box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 3px rgba(0, 0, 0, 0.6);
-  overflow: hidden;
 }
 
 .container .content .imgBx {
@@ -173,6 +172,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 20px;
+  border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,10 +195,12 @@ body {
 }
 
 .container .content .details .iconBx {
-  position: absolute;
-  top: -40px;
+  position: relative;
+  top: -30px;
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
   opacity: 0;
 }
 
@@ -212,9 +214,10 @@ body {
 }
 
 .container .content .details p {
+  position: relative;
+  top: -38px;
   font-size: 1.1rem;
   padding: 10px 0;
-  margin-top: 20px;
   font-weight: 600;
   letter-spacing: 2px;
   font-family: "Akaya Telivigala", cursive;
@@ -222,6 +225,7 @@ body {
 
 .container .content .details a {
   position: relative;
+  top: -37px;
   left: -30%;
   text-decoration: none;
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
